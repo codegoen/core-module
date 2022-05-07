@@ -4,7 +4,7 @@ namespace Modules\Core\Abstracts;
 
 use Illuminate\Foundation\Http\FormRequest as BaseFormRequest;
 
-class FormRequest extends BaseFormRequest
+abstract class FormRequest extends BaseFormRequest
 {
     public function authorize(): bool
     {

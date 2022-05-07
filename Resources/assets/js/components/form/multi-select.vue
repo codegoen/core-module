@@ -148,14 +148,14 @@ export default {
         }
 
         const { data } = await axios.get(
-          `/${this.url}?q=${encodeURIComponent(value)}`,
+          `/${this.url}?filter[name]=${encodeURIComponent(value)}`,
         );
 
         //will be changed for dynamicly api response
         const options = data.data.map((v) => {
           return {
             value: v.id,
-            label: v.attributes.name,
+            label: v.name,
           };
         });
 
