@@ -1,23 +1,24 @@
 {
-    "name": "rizkhal/core",
-    "description": "",
-    "authors": [
-        {
-            "name": "Rizkhal Lamaau",
-            "email": "lamaaurizkhal@gmail.com"
-        }
-    ],
-    "extra": {
-        "laravel": {
-            "providers": [],
-            "aliases": {
-
-            }
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "Modules\\Core\\": ""
-        }
+  "name": "rizkhal/core",
+  "description": "",
+  "authors": [
+    {
+      "name": "Rizkhal Lamaau",
+      "email": "lamaaurizkhal@gmail.com"
     }
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [],
+      "aliases": {}
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Modules\\Core\\": ""
+    },
+    "files": [
+      "./Utils/Helper.php"
+    ]
+  }
 }
