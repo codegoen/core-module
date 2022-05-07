@@ -22,7 +22,6 @@ use Illuminate\Routing\Controller as BaseController;
  *     )
  * )
  */
-
 abstract class CoreController extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;

@@ -9,16 +9,16 @@ class AuthJsonController extends CoreController
 {
     public function register()
     {
-        # code...
+        // code...
     }
-    
+
     public function login()
     {
-        # code...
+        // code...
     }
 
     public function logout()
     {
-        # code...
+        // code...
     }
 }

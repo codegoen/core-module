@@ -2,11 +2,11 @@
 
 namespace Modules\Core\Http\Controllers;
 
-use Inertia\Response;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\RedirectResponse;
+use Inertia\Response;
 use Modules\Core\Http\Requests\LoginWebRequest;
 use Modules\Core\Providers\RouteServiceProvider;
 
