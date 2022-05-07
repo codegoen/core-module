@@ -7,6 +7,10 @@ use Illuminate\Support\Facades\Route;
 
 class RouteServiceProvider extends ServiceProvider
 {
+    public const HOME = 'dashboard';
+
+    public const LOGIN = 'login';
+
     /**
      * The module namespace to assume when generating URLs to actions.
      *
@@ -50,6 +54,10 @@ class RouteServiceProvider extends ServiceProvider
         Route::middleware('web')
             ->namespace($this->moduleNamespace)
             ->group(module_path('Core', '/Routes/web.php'));
+
+        Route::middleware('web')
+            ->namespace($this->moduleNamespace)
+            ->group(module_path('Core', '/Routes/auth.php'));
     }
 
     /**
@@ -64,6 +72,6 @@ class RouteServiceProvider extends ServiceProvider
         Route::prefix('api')
             ->middleware('api')
             ->namespace($this->moduleNamespace)
-            ->group(module_path('Core', '/Routes/api.php'));
+            ->group(module_path('Core', '/Routes/api/v1.php'));
     }
 }
