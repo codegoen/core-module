@@ -104,22 +104,27 @@
                 <breadcrumb :items="app.breadcrumbs" />
               </div>
 
-              <!-- search -->
-              <div class="flex items-center">
-                <button @click.prevent="toggleTheme" type="button">
-                  <v-icon
-                    v-if="!dark"
-                    name="MoonIcon"
-                    class="text-cool-gray-600 h-6 w-6"
-                    type="outline"
-                  />
-                  <v-icon
-                    v-else
-                    name="SunIcon"
-                    class="h-6 w-6"
-                    type="outline"
-                  />
-                </button>
+              <!-- theme toggle -->
+              <div class="flex flex-row items-center">
+                <!-- <div>
+                  dynamic menu here
+                </div> -->
+                <div>
+                  <button @click.prevent="toggleTheme" type="button">
+                    <v-icon
+                      v-if="!dark"
+                      name="MoonIcon"
+                      class="text-cool-gray-600 h-6 w-6"
+                      type="outline"
+                    />
+                    <v-icon
+                      v-else
+                      name="SunIcon"
+                      class="h-6 w-6"
+                      type="outline"
+                    />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
