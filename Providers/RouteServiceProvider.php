@@ -53,11 +53,11 @@ class RouteServiceProvider extends ServiceProvider
     {
         Route::middleware('web')
             ->namespace($this->moduleNamespace)
-            ->group(module_path('Core', '/Routes/web.php'));
+            ->group(module_path('Core', '/Routes/web/index.php'));
 
         Route::middleware('web')
             ->namespace($this->moduleNamespace)
-            ->group(module_path('Core', '/Routes/auth.php'));
+            ->group(module_path('Core', '/Routes/web/auth.php'));
     }
 
     /**
