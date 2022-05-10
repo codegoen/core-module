@@ -186,12 +186,14 @@ export default {
   watch: {
     "$page.props.flash": {
       handler: function (payload) {
-        if (payload.success) {
-          this.$toast.success(payload.success);
-        }
+        if (payload) {
+          if (payload.success) {
+            this.$toast.success(payload.success);
+          }
 
-        if (payload.error) {
-          this.$toast.error(payload.error);
+          if (payload.error) {
+            this.$toast.error(payload.error);
+          }
         }
       },
       deep: true,

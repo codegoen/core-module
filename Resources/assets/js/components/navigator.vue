@@ -21,9 +21,6 @@
             <v-app-link
               v-if="nav.url != '/api/documentation'"
               :href="nav.url"
-              :class="{
-                'dark:bg-cool-gray-800 bg-purple-700': isUrl(nav.url.slice(1)),
-              }"
               class="navigation-link"
             >
               <v-icon :name="nav.heroicon" :type="nav.icon" class="h-4 w-4" />
