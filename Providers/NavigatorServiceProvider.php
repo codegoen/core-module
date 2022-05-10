@@ -15,7 +15,7 @@ class NavigatorServiceProvider extends ServiceProvider
                 Nav::item(__('Overview'))->subItems(
                     [
                         Nav::item(__('Dashboard'))
-                            ->for('/dashboard')
+                            ->for(route('dashboard.dashboard'))
                             ->heroicon('HomeIcon')
                             ->icon('outline'),
 
@@ -25,7 +25,7 @@ class NavigatorServiceProvider extends ServiceProvider
                             ->icon('outline'),
 
                         Nav::item(__('Setting'))
-                            ->for('#')
+                            ->for(route('dashboard.setting'))
                             ->heroicon('CogIcon')
                             ->icon('outline'),
                     ],
